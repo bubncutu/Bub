@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Bub! ❤️</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script>
+      if (!sessionStorage.getItem("unlocked")) {
+        window.location.href = "../index.html";
+      }
+    </script>
+  </head>
+
+  <body
+    class="bg-linear-to-bl bg-neutral-950 from-violet-500 to-fuchsia-500 text-neutral-100 antialiased"
+  >
+    <div id="app" class="max-w-3xl mx-auto px-6 py-12">
+      <!-- content -->
+
+      <!-- loader -->
+      <div
+        id="loader"
+        class="fixed inset-0 bg-neutral-950 flex items-center justify-center z-50"
+      >
+        <p class="animate-pulse text-rose-100">Loading something cute… .✦݁˖</p>
+      </div>
+
+      <section class="mt-24 space-y-4">
+        <h2 class="text-2xl font-medium">Final evaluation</h2>
+
+        <p>I like where this is going.</p>
+        <p>I like you.</p>
+        <p class="font-medium">And I’d like to keep choosing you.</p>
+      </section>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
