@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Bub! ❤️</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <script>
+      if (!sessionStorage.getItem("unlocked")) {
+        window.location.href = "../index.html";
+      }
+    </script> -->
+  </head>
+
+  <body
+    class="bg-linear-to-bl bg-neutral-950 from-violet-500 to-fuchsia-500 text-neutral-100 antialiased"
+  >
+  <!-- Password Modal Overlay -->
+  <div
+    id="password-modal"
+    class="fixed inset-0 bg-black/90 backdrop-blur-md flex items-center justify-center z-[100]"
+  >
+    <div class="modal-dialog bg-neutral-900 hidden p-8 rounded-xl max-w-md border border-rose-300/20">
+      <h2 class="text-xl text-violet-300 font-medium animate-pulse mb-4">
+        🔒 This section is legally protected !!
+      </h2>
+      
+      <p class="italic text-neutral-400 mb-4">
+        Hint: You call me this when you're being nice 💕
+      </p>
+      
+      <input
+        type="password"
+        id="memoryPassword"
+        placeholder="Enter password"
+        class="w-full bg-neutral-800 border border-neutral-700 p-3 rounded mb-4 text-rose-100"
+      />
+      
+      <button
+        onclick="unlockMemories()"
+        class="w-full px-4 py-2 bg-rose-600 rounded hover:bg-rose-700 transition"
+      >
+        Unlock Memories
+      </button>
+      
+      <p id="password-error" class="mt-3 text-sm text-red-400 hidden">
+        Okay clearly you don't call me this when you're being nice 🥺
+      </p>
+    </div>
+  </div>
+
+
+
+    <div id="app" class="max-w-3xl duration-500 ease-in-out pb-6 mx-auto px-6 blur-lg">
+      <!-- Header -->
+      <header
+        class="sticky px-6 bg-zinc-800 z-50 pt-6 top-0 bg-neutral-950 rounded-b-lg"
+        id="nav-container"
+      ></header>
+
+      <!-- content -->
+
+      <!-- loader -->
+      <div
+        id="loader"
+        class="fixed inset-0 bg-neutral-950 flex items-center justify-center z-50"
+      >
+        <p class="animate-pulse text-rose-100">Loading something cute… .✦݁˖</p>
+      </div>
+
+      <section class="space-y-6 text-rose-100"></section>
+
+      <section class="space-y-6 text-rose-100 rounded-xl bg-red-100"></section>
+
+      <section class="mt-8 px-2">
+        <h1 class="text-3xl font-bold text-rose-200 mb-2">Our Memories ✦</h1>
+        <p class="text-neutral-400 mb-8">
+          All the moments we've captured together [◉°]
+        </p>
+        <!-- "gallery grid grid-cols-2 md:grid-cols-3 gap-4" -->
+
+        <!-- Masonry Gallery -->
+        <div class="gallery columns-2 md:columns-3 gap-4 space-y-4"
+        
+        >
+          <!-- Images -->
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/bubs-holding-hands.jpg', 'image')"
+          >
+            <img
+              src="../assets/bubs-holding-hands.jpg"
+              alt="Memory 1"
+              class="rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Candlelight Concert 🎵</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/bubs-together.jpg', 'image')"
+          >
+            <img
+              src="../assets/bubs-together.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">In black</p>
+          </div>
+
+          <!-- Video thumbnail -->
+          <div
+            class="gallery-item cursor-pointer relative"
+            onclick="openLightbox('../assets/artist-who-got-judged.mp4', 'video')"
+          >
+            <img
+              src="../assets/artist-who-got-judged.jpg"
+              alt="Video 1"
+              class="rounded-lg"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="bg-black/50 rounded-full p-4">
+                <svg
+                  class="w-8 h-8 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="text-sm text-neutral-400 mt-2">Artist who got j̶u̶d̶g̶e̶d̶ observed</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/bubs-in-lonavala.jpg', 'image')"
+          >
+            <img
+              src="../assets/bubs-in-lonavala.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Our first trip 🚗🍓️</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/boo-sunflower.jpg', 'image')"
+          >
+            <img
+              src="../assets/boo-sunflower.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Sunflower for boo 🌻️</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/specially-clicked.jpg', 'image')"
+          >
+            <img
+              src="../assets/specially-clicked.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Specially Clicked ⌞ ◡̈ ⌝</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/bubs-portrait.jpg', 'image')"
+          >
+            <img
+              src="../assets/bubs-portrait.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Bubs 🫧</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/investments.jpg', 'image')"
+          >
+            <img
+              src="../assets/investments.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Investments 💷️</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/goadu-shaved.jpg', 'image')"
+          >
+            <img
+              src="../assets/goadu-shaved.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Goadu Shaved 👼️</p>
+          </div>
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/sobermati-mornings.jpg', 'image')"
+          >
+            <img
+              src="../assets/sobermati-mornings.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Sobermati Mornings 🌞️</p>
+          </div>
+
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/arai.jpg', 'image')"jpg', 'image')"
+          >
+            <img
+              src="../assets/arai.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Arai₊⊹</p>
+          </div>
+
+
+
+          <div
+            class="gallery-item cursor-pointer"
+            onclick="openLightbox('../assets/invested-look.jpg', 'image')"jpg', 'image')"
+          >
+            <img
+              src="../assets/invested-look.jpg"
+              alt="Memory 2"
+              class="rounded-lg hover:scale-105 transition-transform"
+            />
+            <p class="text-sm text-neutral-400 mt-2">Invested ₊⊹</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal -->
+      <div
+        id="lightbox"
+        class="hidden fixed inset-0 bg-black/95 z-50 flex items-center justify-center"
+      >
+        <button
+          onclick="closeLightbox()"
+          class="absolute top-6 right-6 text-white text-4xl hover:text-rose-300 transition"
+        >
+          ×
+        </button>
+
+        <button
+          onclick="navigateLightbox(-1)"
+          class="absolute left-6 text-white text-4xl hover:text-rose-300 transition"
+        >
+          ‹
+        </button>
+
+        <button
+          onclick="navigateLightbox(1)"
+          class="absolute right-6 text-white text-4xl hover:text-rose-300 transition"
+        >
+          ›
+        </button>
+
+        <div id="lightbox-content" class="max-w-5xl max-h-[90vh] p-4">
+          <!-- Image or video will be inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../memories.js"></script>
+  </body>
+</html>

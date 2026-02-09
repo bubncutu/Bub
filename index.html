@@ -6,7 +6,7 @@
     <title>For Bub! ❤️</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="style.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -23,9 +23,14 @@
   <body
     class="bg-linear-to-bl bg-neutral-950 from-violet-500 to-fuchsia-500 text-neutral-100 antialiased"
   >
-    <div id="app" class="max-w-3xl mx-auto px-6 py-12">
-      <!-- content -->
+    <div id="app" class="max-w-3xl pb-6 mx-auto px-6">
+      <!-- Header -->
+      <header
+        class="sticky px-6 bg-zinc-800 z-50 pt-6 top-0 bg-neutral-950 rounded-b-lg"
+        id="nav-container"
+      ></header>
 
+      <!-- content -->
       <!-- loader -->
       <div
         id="loader"
@@ -34,85 +39,328 @@
         <p class="animate-pulse text-rose-100">Loading something cute… .✦݁˖</p>
       </div>
 
-      <section class="space-y-6 text-rose-100">
-        <p class="text-lg">
-          Bub, you once told me to rethink my life choices, and why I’m even
-          dating you.
-        </p>
+      <div class="section-container px-3">
+        <section class="space-y-6 text-rose-100">
+          <p class="text-lg">
+            Bub, you once told me to rethink my life choices, and why I’m even
+            dating you.
+          </p>
 
-        <p class="text-lg">So I did. With a small change..</p>
+          <p class="text-lg">So I did.</p>
 
-        <p class="text-lg font-medium">I made a list</p>
+          <p class="text-lg font-medium">
+            I made a list. With a small change..
+          </p>
+        </section>
+        <hr class="border-dashed border-gray-700 my-12" />
         <p class="text-lg text-red-200 font-bold animate-pulse text-rose-200">
           A list of all the reasons why I want to date you... 🤍️
         </p>
-      </section>
+        <p class="italic text-sm text-neutral-600">(in third person)</p>
+        <section class="space-y-6 text-rose-100 rounded-xl bg-red-100">
+          <ul class="text-rose-950 p-12 mt-12 space-y-4">
+            <li>‹𝟹 She is just the prettiest girl I know</li>
+            <li>‹𝟹 She is intelligent, logical, sweet and kind</li>
+            <li>‹𝟹 She grounds me and gives me clarity</li>
+            <li>‹𝟹 She is easy to talk to</li>
+            <li>‹𝟹 She has her own thought process and sticks to it</li>
+            <li>‹𝟹 She is a bit of a dork</li>
+            <li>
+              ‹𝟹 Emotionally regulated. Psych eval passed
+              <span class="animate-pulse">✓</span>
+            </li>
+            <li>‹𝟹 Handles emotions with honesty and calm</li>
+            <li>‹𝟹 Speaks to me only in English</li>
+            <li>‹𝟹 Makes me curious and want to learn more</li>
 
-      <section class="space-y-6 text-rose-100 rounded-xl bg-red-100">
-        <ul class="text-rose-950 p-12 mt-12 space-y-4">
-          <li>‹𝟹 She is just the prettiest girl I know</li>
-          <li>‹𝟹 She is intelligent, logical, sweet and kind</li>
-          <li>‹𝟹 She grounds me and gives me clarity</li>
-          <li>‹𝟹 She is easy to talk to</li>
-          <li>‹𝟹 She has her own thought process and sticks to it</li>
-          <li>‹𝟹 She is a bit of a dork</li>
-          <li>
-            ‹𝟹 Emotionally regulated. Psych eval passed
-            <span class="animate-pulse">✓</span>
-          </li>
-          <li>‹𝟹 Handles emotions with honesty and calm</li>
-          <li>‹𝟹 Speaks to me only in English</li>
-          <li>‹𝟹 Makes me curious and want to learn more</li>
+            <li class="group cursor-pointer">
+              ✦ She's GRREATT at
+              <span class="underline italic">making out</span>!!
+              <span class="hidden group-hover:block mt-2 text-sm text-rose-800">
+                Okay, this was supposed to stay hidden
+              </span>
+            </li>
 
-          <li class="group cursor-pointer">
-            ✦ Is GREAT at <span class="underline">making out</span>
-            <span class="hidden group-hover:block mt-2 text-sm text-rose-800">
-              Okay, this was supposed to stay hidden (╥﹏╥)
-            </span>
-          </li>
+            <li>‹𝟹 Shows up consistently</li>
+          </ul>
+        </section>
+        <hr class="border-dashed border-gray-700 my-12" />
 
-          <li>‹𝟹 Shows up consistently</li>
-        </ul>
-      </section>
+        <section>
+          <h2 class="text-2xl animate-pulse">
+            ヾ(๑╹◡╹)ﾉ🔪 Lies you've told me,
+          </h2>
+          <ul class="mt-6 text-neutral-400 space-y-4">
+            <li>✴ Said you're an extrovert..</li>
+            <li>✴ Said you don't like gestures..</li>
+            <li>✴ Said you don’t blush.. ʚɞ</li>
+          </ul>
+        </section>
 
-      <section class="mt-24">
-        <h2 class="text-2xl animate-pulse">ヾ(๑╹◡╹)ﾉ🔪 Lies you've told me,</h2>
-        <ul class="mt-6 text-neutral-400 space-y-2">
-          <li>✴ Said you're an extrovert..</li>
-          <li>✴ Said you don't like gestures..</li>
-          <li>✴ Said don’t blush.. ʚɞ</li>
-        </ul>
-      </section>
-      <hr class="border-dashed border-gray-700 my-12" />
+        <hr class="border-dashed border-gray-700 my-12" />
 
-      <!-- Legally Protected Section -->
-      <section>
-        <h2 class="text-2xl text-violet-300 font-medium animate-pulse">
-          ⭑.ᐟ This section is legally protected
-        </h2>
+        <section class="our-timeline mt-24">
+          <h2 class="text-2xl text-rose-200 mb-6 animate-pulse">
+            Our Timeline ✦
+          </h2>
 
-        <p class="italic text-neutral-400 mt-2">
-          Hint: You call me this when you’re being nice
-        </p>
+          <div class="timeline-content pl-[1.4rem]">
+            <div class="space-y-6 border-l-2 border-rose-300/30 pl-6">
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">2024 Match!</p>
+                <p class="text-neutral-500 text-xs">
+                  When we first matched on Hinge
+                </p>
+              </div>
 
-        <input
-          type="password"
-          id="passwordInput"
-          placeholder="Enter password"
-          class="mt-4 w-full bg-neutral-900 border border-neutral-700 p-3 rounded"
-        />
+              <div class="relative h-[1200px]">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">Ghosting</p>
+                <p class="text-neutral-500 text-xs">
+                  When we gave ourselves time
+                </p>
+              </div>
 
-        <button
-          onclick="unlock()"
-          class="mt-4 px-4 py-2 bg-neutral-800 rounded hover:bg-neutral-700"
-        >
-          Unlock
-        </button>
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">2025 Rematch ❤️</p>
+                <p class="text-neutral-500 text-xs">
+                  When we rematched on Hinge
+                </p>
+              </div>
 
-        <p id="error" class="mt-3 text-sm text-red-400 hidden">
-          Okay clearly you don’t call me this when you’re being nice 😌
-        </p>
-      </section>
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">
+                  First Date (Pizza Express)
+                </p>
+                <p class="text-neutral-500 text-xs">
+                  When we first met for coffee and a pizza we hated ☕
+                </p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">Standup Comedy</p>
+                <p class="text-neutral-500 text-xs">
+                  And ChaiLeela afterwards..
+                </p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">Hangout in the city</p>
+                <p class="text-neutral-500 text-xs">
+                  And accidentally getting drunk (╥﹏╥)
+                </p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">Shopping for Mamta</p>
+                <p class="text-neutral-500 text-xs">
+                  My first Metro Ride and actually liking you for real
+                </p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">
+                  The Orange & Mauji Timecapsule
+                </p>
+                <p class="text-neutral-500 text-xs">
+                  Where we giggled, discussed about PDA and almost made out!
+                </p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-500 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">First Road Trip 🚗</p>
+                <p class="text-neutral-500 text-xs">to Lonavala</p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-700 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">
+                  Candlelight Concert & Toit
+                </p>
+                <p class="text-neutral-500 text-xs">
+                  and the cab ride later...
+                </p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-500 rounded-full"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">Arai & "breakfast"</p>
+                <p class="text-neutral-500 text-xs">
+                  Getting to know you more..
+                </p>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="absolute -left-[2rem] w-4 h-4 bg-rose-500 rounded-full animate-pulse"
+                ></div>
+                <p class="text-neutral-300 text-sm mb-1">Today</p>
+                <p class="text-neutral-500 text-xs">Our first Valentine's</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-24">
+          <h2 class="text-2xl text-rose-200 mb-6">Little things I love ✦</h2>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div
+              class="bg-neutral-900/50 border border-rose-300/20 rounded-lg p-4 hover:border-rose-300/50 transition-all cursor-pointer group"
+            >
+              <p class="text-2xl mb-2">🅾</p>
+              <p class="text-sm text-neutral-400 group-hover:text-rose-300">
+                Our Blend explosing you
+              </p>
+            </div>
+
+            <div
+              class="bg-neutral-900/50 border border-rose-300/20 rounded-lg p-4 hover:border-rose-300/50 transition-all cursor-pointer group"
+            >
+              <p class="text-2xl mb-2">☕🌻</p>
+              <p class="text-sm text-neutral-400 group-hover:text-rose-300">
+                Time Together
+              </p>
+            </div>
+
+            <div
+              class="bg-neutral-900/50 border border-rose-300/20 rounded-lg p-4 hover:border-rose-300/50 transition-all cursor-pointer group"
+            >
+              <p class="text-2xl mb-2">💭</p>
+              <p class="text-sm text-neutral-400 group-hover:text-rose-300">
+                Deep convos
+              </p>
+            </div>
+
+            <div
+              class="bg-neutral-900/50 border border-rose-300/20 rounded-lg p-4 hover:border-rose-300/50 transition-all cursor-pointer group"
+            >
+              <p class="text-2xl mb-2">🎵</p>
+              <p class="text-sm text-neutral-400 group-hover:text-rose-300">
+                Judging Concerts together
+              </p>
+            </div>
+
+            <div
+              class="bg-neutral-900/50 border border-rose-300/20 rounded-lg p-4 hover:border-rose-300/50 transition-all cursor-pointer group"
+            >
+              <p class="text-2xl mb-2">🤓</p>
+              <p class="text-sm text-neutral-400 group-hover:text-rose-300">
+                Your wierd dorky side
+              </p>
+            </div>
+
+            <div
+              class="bg-neutral-900/50 border border-rose-300/20 rounded-lg p-4 hover:border-rose-300/50 transition-all cursor-pointer group"
+            >
+              <p class="text-2xl mb-2">🫂</p>
+              <p class="text-sm text-neutral-400 group-hover:text-rose-300">
+                How you show up
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-24">
+          <h2 class="text-2xl text-rose-200 mb-6">Us in numbers ✦</h2>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="text-center bg-neutral-900/30 rounded-lg p-6">
+              <p class="text-3xl font-bold text-rose-400">1</p>
+              <p class="text-xs text-neutral-400 mt-2">Trips together</p>
+            </div>
+
+            <div class="text-center bg-neutral-900/30 rounded-lg p-6">
+              <p class="text-3xl font-bold text-rose-400">1+</p>
+              <p class="text-xs text-neutral-400 mt-2">Year knowing you</p>
+            </div>
+
+            <div class="text-center bg-neutral-900/30 rounded-lg p-6">
+              <p class="text-3xl font-bold text-rose-400">100%</p>
+              <p class="text-xs text-neutral-400 mt-2">Worth it</p>
+            </div>
+
+            <div class="text-center bg-neutral-900/30 rounded-lg p-6">
+              <p class="text-3xl font-bold text-rose-400">∞</p>
+              <p class="text-xs text-neutral-400 mt-2">Reasons to date</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-24">
+          <h2 class="text-2xl text-rose-200 mb-8">Explore more ✦</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Memories Card -->
+            <a href="/pages/memories.html" class="group block">
+              <div
+                class="bg-neutral-900/50 border border-rose-300/20 rounded-xl p-6 hover:border-rose-300/50 hover:bg-neutral-900/80 transition-all duration-300"
+              >
+                <div class="text-4xl mb-3">📸</div>
+                <h3
+                  class="text-xl font-bold text-rose-300 mb-2 group-hover:text-rose-200"
+                >
+                  Our Memories
+                </h3>
+                <p class="text-neutral-400 text-sm">
+                  Moments we've captured together [◉°]
+                </p>
+                <p class="text-rose-400 text-xs mt-3 italic">
+                  🔒 Password protected
+                </p>
+              </div>
+            </a>
+
+            <!-- Playlist Card -->
+            <a href="/pages/playlist.html" class="group block">
+              <div
+                class="bg-neutral-900/50 border border-rose-300/20 rounded-xl p-6 hover:border-rose-300/50 hover:bg-neutral-900/80 transition-all duration-300"
+              >
+                <div class="text-4xl mb-3">🎵</div>
+                <h3
+                  class="text-xl font-bold text-rose-300 mb-2 group-hover:text-rose-200"
+                >
+                  Songs for You
+                </h3>
+                <p class="text-neutral-400 text-sm">
+                  Some of my favorite songs you should listen..
+                </p>
+                <p class="text-rose-400 text-xs mt-3">▶︎•၊၊||၊|။|||||။၊|။•</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script src="./script.js"></script>
