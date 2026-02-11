@@ -92,8 +92,11 @@
           </h2>
           <ul class="mt-6 text-neutral-400 space-y-4">
             <li>✴ Said you're an extrovert..</li>
-            <li>✴ Said you don't like gestures..</li>
             <li>✴ Said you don’t blush.. ʚɞ</li>
+            <li>✴ Said you don't like gestures..</li>
+            <li>✴ Said you don't like lovey-dovey.. >ᴗ<</li>
+            <li>✴ Said you don't make first moves.. ﾒ૦</li>
+            <li>✴ Said you're a red flag.. 💚️</li>
           </ul>
         </section>
 
@@ -116,11 +119,17 @@
                 </p>
               </div>
 
-              <div class="relative h-[1200px]">
+              <div class="relative h-[2000px]">
                 <div
                   class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
                 ></div>
-                <p class="text-neutral-300 text-sm mb-1">Ghosting</p>
+                <p class="text-neutral-300 text-sm font-bold mb-1">Ghosting</p>
+
+                <img
+                  src="./assets/ghost.png"
+                  class="animate-pulse absolute mix-blend-plus-lighter opacity-50 right-0 top-[1000px]"
+                />
+
                 <p class="text-neutral-500 text-xs">
                   When we gave ourselves time
                 </p>
@@ -130,7 +139,11 @@
                 <div
                   class="absolute -left-[2rem] w-4 h-4 bg-rose-400 rounded-full"
                 ></div>
-                <p class="text-neutral-300 text-sm mb-1">2025 Rematch ❤️</p>
+                <p
+                  class="text-neutral-300 font-bold animate-pulse text-sm mb-1"
+                >
+                  2025 Rematch ❤️
+                </p>
                 <p class="text-neutral-500 text-xs">
                   When we rematched on Hinge
                 </p>
@@ -290,23 +303,31 @@
             </div>
           </div>
         </section>
-
         <section class="mt-24">
           <h2 class="text-2xl text-rose-200 mb-6">Us in numbers ✦</h2>
 
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div class="text-center bg-neutral-900/30 rounded-lg p-6">
-              <p class="text-3xl font-bold text-rose-400">1</p>
+              <p
+                class="text-3xl font-bold text-rose-400 counter"
+                data-target="1"
+              >
+                0
+              </p>
               <p class="text-xs text-neutral-400 mt-2">Trips together</p>
             </div>
 
             <div class="text-center bg-neutral-900/30 rounded-lg p-6">
-              <p class="text-3xl font-bold text-rose-400">1+</p>
+              <p class="text-3xl font-bold text-rose-400">
+                <span class="counter" data-target="1">0</span>+
+              </p>
               <p class="text-xs text-neutral-400 mt-2">Year knowing you</p>
             </div>
 
             <div class="text-center bg-neutral-900/30 rounded-lg p-6">
-              <p class="text-3xl font-bold text-rose-400">100%</p>
+              <p class="text-3xl font-bold text-rose-400">
+                <span class="counter" data-target="100">0</span>%
+              </p>
               <p class="text-xs text-neutral-400 mt-2">Worth it</p>
             </div>
 
