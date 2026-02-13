@@ -23,7 +23,7 @@
   <body
     class="bg-linear-to-bl bg-neutral-950 from-violet-500 to-fuchsia-500 text-neutral-100 antialiased"
   >
-    <div id="app" class="max-w-3xl pb-6 mx-auto px-6">
+    <div id="app" class="max-w-3xl pb-6 mx-auto px-6 overflow-hidden">
       <!-- Header -->
       <header
         class="sticky px-6 bg-zinc-800 z-50 pt-6 top-0 bg-neutral-950 rounded-b-lg"
@@ -89,8 +89,13 @@
         <hr class="border-dashed border-gray-700 my-12" />
 
         <section
-          class="fade-in-section bg-neutral-900/50 border border-rose-300/20 rounded-xl p-8 hover:border-rose-300/40 transition-all"
+          class="fade-in-section bg-neutral-900/50 border border-rose-300/20 rounded-xl p-8 hover:border-rose-300/40 transition-all relative"
         >
+          <img
+            src="../assets/random-lines.png"
+            alt="Random lines"
+            class="absolute z-10 left-[200px] top-[200px] md:left-[800px] md:top-[200px] opacity-10 rotate-180 h-full"
+          />
           <h2 class="text-2xl animate-pulse">
             ヾ(๑╹◡╹)ﾉ🔪 Lies you've told me,
           </h2>
@@ -250,6 +255,12 @@
         </section>
 
         <section class="fade-in-section mt-24">
+          <img
+            src="../assets/random-lines.png"
+            alt="Random lines"
+            class="absolute z-10 right-[250px] top-[300px] md:right-[900px] md:top-0 opacity-10 rotate-270 h-full"
+          />
+
           <h2 class="text-2xl text-rose-200 mb-6">Little things I love ✦</h2>
 
           <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
