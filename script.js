@@ -89,3 +89,28 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(statsSection);
   }
 });
+
+// Animation JS
+
+// Fade in sections on scroll
+const fadeInObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+      }
+    });
+  },
+  {
+    threshold: 0.1,
+    rootMargin: "0px 0px -100px 0px",
+  },
+);
+
+// Observe all fade-in sections
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeInSections = document.querySelectorAll(".fade-in-section");
+  fadeInSections.forEach((section) => {
+    fadeInObserver.observe(section);
+  });
+});
