@@ -88,7 +88,12 @@ window.addEventListener("DOMContentLoaded", () => {
    - poster:  (video only) the thumbnail image shown before play
    ========================================================= */
 const MEMORIES = [
+  { src: "booboos-view.jpg",           type: "image", caption: "No color, just bubu ˚❀" },
+  { src: "bubs-with-pout.jpg",         type: "image", caption: "Booboo's favourite day 🥰️" },
+  { src: "gym-bag.jpg",                type: "image", caption: "Motivated by bub" },
+  { src: "my-pretty-princess.jpg",     type: "image", caption: "Just had to be clicked" },
   { src: "bubs-holding-hands.jpg",     type: "image", caption: "Candlelight Concert 🎵" },
+  { src: "bubu-playing.jpg",           type: "image", caption: "Locked in 🎯" },
   { src: "bubs-together.jpg",          type: "image", caption: "In black" },
   { src: "artist-who-got-judged.mp4",  type: "video", caption: "Artist who got j̶u̶d̶g̶e̶d̶ observed", poster: "artist-who-got-judged.jpg" },
   { src: "bubs-in-lonavala.jpg",       type: "image", caption: "Our first trip 🚗🍓️" },
