@@ -88,173 +88,9 @@
         </p>
         <!-- "gallery grid grid-cols-2 md:grid-cols-3 gap-4" -->
 
-        <!-- Masonry Gallery -->
-        <div class="gallery columns-2 md:columns-3 gap-4 space-y-4"
+        <!-- Masonry Gallery (data-driven: edit MEMORIES in memories.js) -->
+        <div class="gallery columns-2 md:columns-3 gap-4 space-y-4" id="gallery-mount"></div>
         
-        >
-          <!-- Images -->
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/bubs-holding-hands.jpg', 'image')"
-          >
-            <img
-              src="../assets/bubs-holding-hands.jpg"
-              alt="Memory 1"
-              class="rounded-lg hover:scale-105 transition-transform duration-300"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Candlelight Concert 🎵</p>
-          </div>
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/bubs-together.jpg', 'image')"
-          >
-            <img
-              src="../assets/bubs-together.jpg"
-              alt="Memory 2"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">In black</p>
-          </div>
-
-          <!-- Video thumbnail -->
-          <div
-            class="gallery-item cursor-pointer relative"
-            onclick="openLightbox('../assets/artist-who-got-judged.mp4', 'video')"
-          >
-            <img
-              src="../assets/artist-who-got-judged.jpg"
-              alt="Video 1"
-              class="rounded-lg"
-            />
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="bg-black/50 rounded-full p-4">
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"
-                  />
-                </svg>
-              </div>
-            </div>
-            <p class="text-sm text-neutral-400 mt-2">Artist who got j̶u̶d̶g̶e̶d̶ observed</p>
-          </div>
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/bubs-in-lonavala.jpg', 'image')"
-          >
-            <img
-              src="../assets/bubs-in-lonavala.jpg"
-              alt="Memory 2"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Our first trip 🚗🍓️</p>
-          </div>
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/boo-sunflower.jpg', 'image')"
-          >
-            <img
-              src="../assets/boo-sunflower.jpg"
-              alt="Memory 2"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Sunflower for boo 🌻️</p>
-          </div>
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/specially-clicked.jpg', 'image')"
-          >
-            <img
-              src="../assets/specially-clicked.jpg"
-              alt="Memory 2"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Specially Clicked ⌞ ◡̈ ⌝</p>
-          </div>
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/bubs-portrait.jpg', 'image')"
-          >
-            <img
-              src="../assets/bubs-portrait.jpg"
-              alt="Memory 2"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Bubs 🫧</p>
-          </div>
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/investments.jpg', 'image')"
-          >
-            <img
-              src="../assets/investments.jpg"
-              alt="Memory 2"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Investments 💷️</p>
-          </div>
-
-
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/goadu-shaved.jpg', 'image')"
-          >
-            <img
-              src="../assets/goadu-shaved.jpg"
-              alt="Goadu Shaved 👼️"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Goadu Shaved 👼️</p>
-          </div>
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/sobermati-mornings.jpg', 'image')"
-          >
-            <img
-              src="../assets/sobermati-mornings.jpg"
-              alt="Sobermati Mornings 🌞️"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Sobermati Mornings 🌞️</p>
-          </div>
-
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/arai.jpg', 'image')"jpg', 'image')"
-          >
-            <img
-              src="../assets/arai.jpg"
-              alt="Arai₊⊹"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Arai₊⊹</p>
-          </div>
-
-
-          <div
-            class="gallery-item cursor-pointer"
-            onclick="openLightbox('../assets/invested-look.jpg', 'image')"jpg', 'image')"
-          >
-            <img
-              src="../assets/invested-look.jpg"
-              alt="Invested"
-              class="rounded-lg hover:scale-105 transition-transform"
-            />
-            <p class="text-sm text-neutral-400 mt-2">Invested ₊⊹</p>
-          </div>
-        </div>
 
 
         
@@ -300,8 +136,8 @@
       <div
         class="z-20 absolute w-full flex flex-col content-center justify-center"
       >
-        <p class="text-neutral-400 text-sm z-20">Made with ❤️ for Boo</p>
-        <p class="text-neutral-600 text-xs mt-2 z-20">Booboo 2026</p>
+        <p class="text-neutral-400 text-sm z-20">Made with ❤️ for Bub</p>
+        <p class="text-neutral-600 text-xs mt-2 z-20">Valentine's 2026</p>
       </div>
     </section>
 
