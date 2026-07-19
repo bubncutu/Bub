@@ -124,7 +124,7 @@ const MEMORIES = [
   { src: "booboos-view.jpg",                type: "image", caption: "No color, just my princess ❀" },
   { src: "my-pretty-princess.jpg",          type: "image", caption: "Just had to be clicked" },
   { src: "bubu-playing.jpg",                type: "image", caption: "Locked in 🎯" },
-  { src: "my-cosmopolitan.jpg",             type: "image", caption: "My cosmopolitan..." },
+  { src: "my-cosmopolitan.jpg",             type: "image", caption: "My cosmopolitan...🍸" },
   { src: "valentine-sunflower.jpg",         type: "image", caption: "Sunflower with sunflower 🌻" },
   { src: "bubs-holding-hands.jpg",          type: "image", caption: "Candlelight Concert 🎵" },
   { src: "bubs-together.jpg",               type: "image", caption: "In black" },
