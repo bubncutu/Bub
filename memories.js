@@ -127,6 +127,7 @@ const MEMORIES = [
   { src: "bubu-playing.jpg",                type: "image", caption: "Locked in 🎯" },
   { src: "my-cosmopolitan.jpg",             type: "image", caption: "My cosmopolitan...🍸 " },
   { src: "valentine-sunflower.jpg",         type: "image", caption: "Sunflower with sunflower 🌻" },
+  { src: "cake.jpg",                        type: "image", caption: "Personalized  ༘ ⋆｡" },
   { src: "cherie.jpg",                      type: "image", caption: "B'day at Cherie 🥰️♡⟡" },
   { src: "soo-be-it.jpg",                   type: "image", caption: "Soo be it.. ˙✧˖°☕ ༘ ⋆｡˚" },
   { src: "bubs-holding-hands.jpg",          type: "image", caption: "Candlelight Concert 🎵" },
