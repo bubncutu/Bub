@@ -117,14 +117,19 @@ window.addEventListener("DOMContentLoaded", () => {
    - poster:  (video only) the thumbnail image shown before play
    ========================================================= */
 const MEMORIES = [
+  { src: "aesthetic-aesthetic.jpg",         type: "image", caption: "❀˚Aesthetic Aesthetic ˚❀" },
+  { src: "my-angel.jpg",                    type: "image", caption: "My Angel ִֶָ🪽་༘" },
+  { src: "gym-bubs.jpg",                    type: "image", caption: "Gym bubs! ⚡︎⚡︎" },
   { src: "bubu-getting-the-liscence.mp4",   type: "video", caption: "Getting that liscence ˚❀" , poster:"bubu-driving.png" },
-  { src: "booboos-view.jpg",                type: "image", caption: "No color, just bubu ˚❀" },
-  { src: "bubs-with-pout.jpg",              type: "image", caption: "Booboo's favourite day 🥰️" },
-  { src: "gym-bag.jpg",                     type: "image", caption: "Motivated by bub" },
+  { src: "booboos-view.jpg",                type: "image", caption: "No color, just my princess ❀" },
   { src: "my-pretty-princess.jpg",          type: "image", caption: "Just had to be clicked" },
-  { src: "bubs-holding-hands.jpg",          type: "image", caption: "Candlelight Concert 🎵" },
   { src: "bubu-playing.jpg",                type: "image", caption: "Locked in 🎯" },
+  { src: "my-cosmopolitan.jpg",             type: "image", caption: "My cosmopolitan..." },
+  { src: "valentine-sunflower.jpg",         type: "image", caption: "Sunflower with sunflower 🌻" },
+  { src: "bubs-holding-hands.jpg",          type: "image", caption: "Candlelight Concert 🎵" },
   { src: "bubs-together.jpg",               type: "image", caption: "In black" },
+  { src: "gym-bag.jpg",                     type: "image", caption: "Motivated by bub" },
+  { src: "cherie.jpg",                      type: "image", caption: "B'day at Cherie 🥰️♡⟡" },
   { src: "artist-who-got-judged.mp4",       type: "video", caption: "Artist who got j̶u̶d̶g̶e̶d̶ observed", poster: "artist-who-got-judged.jpg" },
   { src: "bubs-in-lonavala.jpg",            type: "image", caption: "Our first trip 🚗🍓️" },
   { src: "boo-sunflower.jpg",               type: "image", caption: "Sunflower for boo 🌻️" },
