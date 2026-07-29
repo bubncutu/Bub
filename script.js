@@ -114,3 +114,73 @@ document.addEventListener("DOMContentLoaded", () => {
     fadeInObserver.observe(section);
   });
 });
+
+
+
+
+
+
+
+
+// --- Dreamy Star Canvas Animation ---
+document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElementById("star-canvas");
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext("2d");
+    let width, height;
+    let stars = [];
+
+    function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+        initStars();
+    }
+
+    function initStars() {
+        stars = [];
+        const numStars = Math.floor((width * height) / 3000); // Responsive star count
+        for (let i = 0; i < numStars; i++) {
+            stars.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                r: Math.random() * 1.5 + 0.5,
+                opacity: Math.random(),
+                speedY: Math.random() * 0.3 + 0.1,
+                twinkleSpeed: Math.random() * 0.03 + 0.01,
+                twinkleDir: Math.random() > 0.5 ? 1 : -1
+            });
+        }
+    }
+
+    function drawStars() {
+        ctx.clearRect(0, 0, width, height);
+        
+        stars.forEach(star => {
+            // Twinkle logic
+            star.opacity += star.twinkleSpeed * star.twinkleDir;
+            if (star.opacity >= 1) star.twinkleDir = -1;
+            else if (star.opacity <= 0.2) star.twinkleDir = 1;
+
+            // Move upward logic
+            star.y -= star.speedY;
+            if (star.y < 0) {
+                star.y = height;
+                star.x = Math.random() * width;
+            }
+
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
+            ctx.fill();
+        });
+        
+        requestAnimationFrame(drawStars);
+    }
+
+    window.addEventListener("resize", resize);
+    resize();
+    drawStars();
+});
