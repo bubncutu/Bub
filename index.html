@@ -43,20 +43,69 @@
         <p class="animate-pulse text-rose-100">Loading something cute… .✦݁˖</p>
       </div>
 
+
+
+    <!-- === NEW DREAMY HERO SECTION === -->
+    <section class="min-h-[85vh] flex flex-col items-center justify-center relative pt-12 pb-20 px-4">
+        
+        <!-- Dreamy Headline -->
+        <div class="text-center space-y-4 z-20 fade-in-section">
+            <h1 class="text-5xl md:text-7xl font-bold text-rose-200 dreamy-text mb-4">
+                Happy Birthday, Gojiri! ✨
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-300 max-w-lg mx-auto italic">
+                A whole universe of stars, but my eyes are always on you.
+            </p>
+        </div>
+
+        <!-- Floating Picture Cards Container -->
+        <div class="relative flex flex-wrap justify-center items-center mt-16 gap-6 sm:gap-10 max-w-4xl mx-auto w-full">
+            
+            <!-- Picture Card 1 (Left - Tilted Left) -->
+            <div class="group relative z-10 transform -rotate-6 translate-y-4 hover:rotate-0 hover:scale-110 hover:z-50 transition-all duration-500 ease-out cursor-pointer">
+                <div class="bg-white/5 backdrop-blur-md p-3 pb-10 rounded-xl border border-rose-300/30 shadow-[0_8px_30px_rgba(0,0,0,0.3)] dreamy-card">
+                    <div class="w-36 h-48 sm:w-48 sm:h-64 bg-neutral-800 rounded-lg overflow-hidden">
+                        <!-- Replace with your actual image path -->
+                        <img src="../assets/my-cosmopolitan.jpg" alt="Us" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="absolute bottom-3 right-4 text-rose-200 text-sm font-medium -rotate-2">Favorite dork 🤍</p>
+                </div>
+            </div>
+
+            <!-- Picture Card 2 (Center - Tilted Right & Elevated) -->
+            <div class="group relative z-20 transform rotate-3 -translate-y-8 hover:rotate-0 hover:scale-110 hover:z-50 transition-all duration-500 ease-out cursor-pointer">
+                <div class="bg-white/5 backdrop-blur-md p-3 pb-10 rounded-xl border border-rose-300/30 shadow-[0_8px_30px_rgba(0,0,0,0.3)] dreamy-card">
+                    <div class="w-40 h-52 sm:w-56 sm:h-72 bg-neutral-800 rounded-lg overflow-hidden">
+                        <img src="../assets/my-angel.jpg" alt="Us" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="absolute bottom-3 right-4 text-rose-200 text-sm font-medium rotate-1">My universe</p>
+                </div>
+            </div>
+
+            <!-- Picture Card 3 (Right - Tilted Left) -->
+            <div class="group relative z-10 transform -rotate-3 translate-y-6 hover:rotate-0 hover:scale-110 hover:z-50 transition-all duration-500 ease-out cursor-pointer">
+                <div class="bg-white/5 backdrop-blur-md p-3 pb-10 rounded-xl border border-rose-300/30 shadow-[0_8px_30px_rgba(0,0,0,0.3)] dreamy-card">
+                    <div class="w-36 h-48 sm:w-48 sm:h-64 bg-neutral-800 rounded-lg overflow-hidden">
+                        <img src="../assets/booboos-view.jpg" alt="Us" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <p class="absolute bottom-3 right-4 text-rose-200 text-sm font-medium -rotate-3">The prettiest</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+      
+
       <div class="section-container px-3">
-        <section class="space-y-6 text-rose-100">
-          <p class="text-lg">
-            Bub, you once told me to rethink my life choices, and why I’m even
-            dating you.
-          </p>
 
-          <p class="text-lg">So I did.</p>
-
-          <p class="text-lg font-medium">
-            I made a list. With a small change..
-          </p>
+        <section class="space-y-6 text-center text-rose-100 p fade-in-section">
+            <p class="text-lg">You once told me to rethink my life choices, and why I'm even dating you.</p>
+            <p class="text-lg font-medium text-rose-200">So I updated the list... and our <a href="pages/memories.html">memories...</a></p>
         </section>
-        <hr class="border-dashed border-gray-700 my-12" />
+        
+        <hr class="border-dashed border-gray-700/50 my-12">
+
+
         <p class="text-lg text-red-200 font-bold animate-pulse text-rose-200">
           A list of all the reasons why I
           <span class="line-through decoration-rose-400/70 decoration-2">want to date</span>
@@ -314,15 +363,21 @@
               </div>
 
               <!-- Today -->
-              <div class="relative">
-                <div
+              <div class="relative py-4 fade-in-section">
+                <!-- <div
                   class="absolute -left-[2rem] w-4 h-4 bg-rose-500 rounded-full animate-pulse"
-                ></div>
-                <p class="text-neutral-300 text-sm mb-1 font-bold">Bub's Birtdhay ✦</p>
+                ></div> -->
+                <div class="absolute -left-[2.5rem] w-8 h-8 bg-rose-500 rounded-full animate-pulse flex items-center justify-center shadow-[0_0_15px_rgba(244,63,94,0.8)]">
+                    🌸️
+                </div>
+
+                <p class="text-neutral-300 text-sm mb-1 font-bold">Your Birtdhay !!! ✦ 🥳️</p>
                 <p class="text-neutral-500 text-xs">
-                  Your birthday. And me being so grateful that you were born! 🎂
+                  Your birthday, and me being sooooo grateful for your existence! 🎂😁️
                 </p>
               </div>
+
+
             </div>
           </div>
         </section>
@@ -564,5 +619,9 @@
     </section>
 
     <script src="../script.js"></script>
+
+    <!-- Add this right after <div id="app"> or body -->
+    <canvas id="star-canvas" class="fixed inset-0 z-[-1] pointer-events-none"></canvas>
+
   </body>
 </html>
